@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        
+        <title>Test_PHP</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <h1 class="mt-4 mb-4 py-1 pl-2 text-center">Ordini</h1>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 mx-auto">
+                            <form action="#">
+                                <div class="input-group mb-3" id="div-categoria-filtro">
+                                    <select class="custom-select" id="select-ordinamento" name="select-ordinamento">';
+                                        <option value="ASC"> Crescente </option>
+                                        <option selected value="DESC"> Decrescente </option>
+                                    </select>    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="table-ordini col-10 mx-auto">
+                            <table class="table table-ordini">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Nome Cliente</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-ordini">
+                                    <!-- ## index.js ## -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+        <script src="resources/js/index.js"></script>
+        
+    </body>
+</html>    
